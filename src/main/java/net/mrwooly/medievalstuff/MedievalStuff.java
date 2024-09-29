@@ -2,6 +2,7 @@ package net.mrwooly.medievalstuff;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mrwooly.medievalstuff.block.ModBlocks;
 import net.mrwooly.medievalstuff.item.ModItemGroups;
 import net.mrwooly.medievalstuff.item.ModItems;
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class MedievalStuff implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
