@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "medievalstuff",
+	"version": "${version}",
+	"name": "Medieval Stuff",
+	"description": "This is a small medieval and fantasy style mod! Enjoy it and have fun!:) And also huge thanks to 202abob5 for a few textures and ideas!",
+	"authors": [
+		"MrWooly357!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/medievalstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mrwooly.medievalstuff.MedievalStuff"
+		],
+		"fabric-datagen": [
+			"net.mrwooly.medievalstuff.MedievalStuffDataGenerator"
+		],
+		"client": [
+			"net.mrwooly.medievalstuff.MedievalStuffClient"
+		]
+	},
+	"mixins": [
+		"medievalstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
