@@ -1,7 +1,6 @@
 package net.mrwooly.medievalstuff.item;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -30,6 +29,26 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+
+    public static final Item SILVER_SWORD = registerItem("silver_sword",
+            new SwordItem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SILVER, 3, -2.2f))));
+
+    public static final Item SILVER_PICKAXE = registerItem("silver_pickaxe",
+            new PickaxeItem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SILVER, 1f, -2.7f))));
+
+    public static final Item SILVER_AXE = registerItem("silver_axe",
+            new AxeItem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.SILVER, 6f, -3f))));
+
+    public static final Item SILVER_SHOVEL = registerItem("silver_shovel",
+            new ShovelItem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.SILVER, 1.5f, -2.9f))));
+
+    public static final Item SILVER_HOE = registerItem("silver_hoe",
+            new HoeItem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.SILVER, -2.0f, -0.9f))));
 
 
     public static Item registerItem(String name, Item item) {

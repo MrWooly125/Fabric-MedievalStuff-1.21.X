@@ -46,6 +46,17 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
                     }).build());
 
+    public static final ItemGroup MEDIEVALSTUFF_EQUIPMENT = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MedievalStuff.MOD_ID, "medievalstuff_equipment"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff_equipment"))
+                    .icon(() -> new ItemStack(ModItems.SILVER_SWORD)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SILVER_SWORD);
+                        entries.add(ModItems.SILVER_PICKAXE);
+                        entries.add(ModItems.SILVER_AXE);
+                        entries.add(ModItems.SILVER_SHOVEL);
+                        entries.add(ModItems.SILVER_HOE);
+                    }).build());
+
     public static void registerItemGroups() {
         MedievalStuff.LOGGER.info("Registering Item Groups for " + MedievalStuff.MOD_ID);
     }

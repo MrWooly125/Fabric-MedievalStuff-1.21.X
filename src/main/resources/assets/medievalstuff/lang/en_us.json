@@ -6,6 +6,12 @@
   "item.medievalstuff.piece_of_jelly": "Piece of Jelly",
   "item.medievalstuff.jar_of_jelly": "Jar of Jelly",
 
+  "item.medievalstuff.silver_sword": "Silver Sword",
+  "item.medievalstuff.silver_pickaxe": "Silver Pickaxe",
+  "item.medievalstuff.silver_axe": "Silver Axe",
+  "item.medievalstuff.silver_shovel": "Silver Shovel",
+  "item.medievalstuff.silver_hoe": "Silver Hoe",
+
   "block.medievalstuff.gloomy_stone": "Gloomy Stone",
   "block.medievalstuff.gloomy_stone_stairs": "Gloomy Stone Stairs",
   "block.medievalstuff.gloomy_stone_slab": "Gloomy Stone Slab",
@@ -21,8 +27,9 @@
   "block.medievalstuff.silver_ore": "Silver Ore",
   "block.medievalstuff.deepslate_silver_ore": "Deepslate Silver Ore",
 
-  "itemgroup.medievalstuff_items": "Medievalstuff Items",
-  "itemgroup.medievalstuff_blocks": "Medievalstuff Blocks",
+  "itemgroup.medievalstuff_items": "Medieval Stuff Items",
+  "itemgroup.medievalstuff_blocks": "Medieval Stuff Blocks",
+  "itemgroup.medievalstuff_equipment": "Medieval Stuff Equipment",
 
   "tooltip.medievalstuff.piece_of_jelly.tooltip": "When eaten might give §5levitation§r effect for around 1.5s",
   "tooltip.medievalstuff.jar_of_jelly.tooltip": "When eaten might give §5levitation§r effect for around 7.5s"
