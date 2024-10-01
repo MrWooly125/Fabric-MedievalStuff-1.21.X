@@ -16,7 +16,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RAW_SILVER_BLOCK,
+                .add(ModBlocks.GLOOMY_STONE,
+                        ModBlocks.GLOOMY_STONE_STAIRS,
+                        ModBlocks.GLOOMY_STONE_SLAB,
+                        ModBlocks.GLOOMY_STONE_PRESSURE_PLATE,
+                        ModBlocks.GLOOMY_STONE_BUTTON,
+                        ModBlocks.GLOOMY_STONE_BRICKS,
+                        ModBlocks.GLOOMY_STONE_BRICK_STAIRS,
+                        ModBlocks.GLOOMY_STONE_BRICK_SLAB,
+                        ModBlocks.GLOOMY_STONE_BRICK_WALL,
+
+                        ModBlocks.RAW_SILVER_BLOCK,
                         ModBlocks.SILVER_BLOCK,
                         ModBlocks.SILVER_ORE,
                         ModBlocks.DEEPSLATE_SILVER_ORE);
@@ -27,14 +37,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE);
 
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RAW_SILVER_BLOCK,
                         ModBlocks.SILVER_BLOCK,
                         ModBlocks.SILVER_ORE);
 
+
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_SILVER_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.GLOOMY_STONE_BRICK_WALL);
     }
 }

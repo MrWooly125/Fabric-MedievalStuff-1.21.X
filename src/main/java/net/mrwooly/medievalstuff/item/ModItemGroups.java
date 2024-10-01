@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SILVER_INGOT);
                         entries.add(ModItems.SILVER_NUGGET);
 
+
                         entries.add(ModItems.PIECE_OF_JELLY);
                         entries.add(ModItems.JAR_OF_JELLY);
                     }).build());
@@ -27,6 +28,18 @@ public class ModItemGroups {
             Identifier.of(MedievalStuff.MOD_ID, "medievalstuff_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff_blocks"))
                     .icon(() -> new ItemStack(ModBlocks.RAW_SILVER_BLOCK)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.GLOOMY_STONE);
+                        entries.add(ModBlocks.GLOOMY_STONE_STAIRS);
+                        entries.add(ModBlocks.GLOOMY_STONE_SLAB);
+                        entries.add(ModBlocks.GLOOMY_STONE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.GLOOMY_STONE_BUTTON);
+
+                        entries.add(ModBlocks.GLOOMY_STONE_BRICKS);
+                        entries.add(ModBlocks.GLOOMY_STONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.GLOOMY_STONE_BRICK_SLAB);
+                        entries.add(ModBlocks.GLOOMY_STONE_BRICK_WALL);
+
+
                         entries.add(ModBlocks.RAW_SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_ORE);
