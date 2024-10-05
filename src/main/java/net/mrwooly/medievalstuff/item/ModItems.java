@@ -7,6 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mrwooly.medievalstuff.MedievalStuff;
+import net.mrwooly.medievalstuff.item.custom.DaggerItem;
 
 import java.util.List;
 
@@ -49,6 +50,28 @@ public class ModItems {
     public static final Item SILVER_HOE = registerItem("silver_hoe",
             new HoeItem(ModToolMaterials.SILVER,
                     new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.SILVER, -2.0f, -0.9f))));
+
+
+    public static final Item SILVER_DAGGER = registerItem("silver_dagger",
+            new DaggerItem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.8f, -2f))));
+
+
+    public static final Item SILVER_HELMET = registerItem("silver_helmet",
+            new ArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(16))));
+
+    public static final Item SILVER_CHESTPLATE = registerItem("silver_chestplate",
+            new ArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(16))));
+
+    public static final Item SILVER_LEGGINGS = registerItem("silver_leggings",
+            new ArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(16))));
+
+    public static final Item SILVER_BOOTS = registerItem("silver_boots",
+            new ArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(16))));
 
 
     public static Item registerItem(String name, Item item) {

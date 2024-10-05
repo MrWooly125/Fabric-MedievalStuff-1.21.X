@@ -11,6 +11,12 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.mrwooly.medievalstuff.MedievalStuff;
 
 public class ModBlocks {
+    public static final Block GLOOMY_DIRT = registerBlock("gloomy_dirt",
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRAVEL).strength(0.6f).requiresTool()));
+
+    public static final Block LUMISHROOM_CAP = registerBlock("lumishroom_cap",
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WART_BLOCK).strength(1f).luminance(state -> 2)));
+
         public static final Block GLOOMY_STONE = registerBlock("gloomy_stone",
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)
                     .strength(2f).requiresTool()));
@@ -66,7 +72,6 @@ public class ModBlocks {
 
     public static final Block COPY_BLOCK = registerBlock("copy_block",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

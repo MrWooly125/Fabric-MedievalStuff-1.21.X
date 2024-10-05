@@ -15,6 +15,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLOOMY_DIRT);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUMISHROOM_CAP);
+
         BlockStateModelGenerator.BlockTexturePool gloomyStoneTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOOMY_STONE);
 
         gloomyStoneTexturePool.stairs(ModBlocks.GLOOMY_STONE_STAIRS);
@@ -49,5 +52,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILVER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.SILVER_DAGGER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.SILVER_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_BOOTS, Models.GENERATED);
     }
 }

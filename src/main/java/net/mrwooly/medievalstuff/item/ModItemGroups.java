@@ -5,6 +5,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mrwooly.medievalstuff.MedievalStuff;
@@ -28,6 +29,9 @@ public class ModItemGroups {
             Identifier.of(MedievalStuff.MOD_ID, "medievalstuff_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff_blocks"))
                     .icon(() -> new ItemStack(ModBlocks.RAW_SILVER_BLOCK)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.GLOOMY_DIRT);
+                        entries.add(ModBlocks.LUMISHROOM_CAP);
+
                         entries.add(ModBlocks.GLOOMY_STONE);
                         entries.add(ModBlocks.GLOOMY_STONE_STAIRS);
                         entries.add(ModBlocks.GLOOMY_STONE_SLAB);
@@ -49,12 +53,19 @@ public class ModItemGroups {
     public static final ItemGroup MEDIEVALSTUFF_EQUIPMENT = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MedievalStuff.MOD_ID, "medievalstuff_equipment"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff_equipment"))
-                    .icon(() -> new ItemStack(ModItems.SILVER_SWORD)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.SILVER_HELMET)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.SILVER_PICKAXE);
                         entries.add(ModItems.SILVER_AXE);
                         entries.add(ModItems.SILVER_SHOVEL);
                         entries.add(ModItems.SILVER_HOE);
+
+                        entries.add(ModItems.SILVER_DAGGER);
+
+                        entries.add(ModItems.SILVER_HELMET);
+                        entries.add(ModItems.SILVER_CHESTPLATE);
+                        entries.add(ModItems.SILVER_LEGGINGS);
+                        entries.add(ModItems.SILVER_BOOTS);
                     }).build());
 
     public static void registerItemGroups() {
