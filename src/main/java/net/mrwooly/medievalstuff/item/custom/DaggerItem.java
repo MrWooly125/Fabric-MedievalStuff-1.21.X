@@ -11,10 +11,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ToolItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
@@ -22,7 +19,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class DaggerItem extends ToolItem {
+public class DaggerItem extends SwordItem {
     public DaggerItem(ToolMaterial toolMaterial, Item.Settings settings) {
         super(toolMaterial, settings.component(DataComponentTypes.TOOL, createToolComponent()));
     }

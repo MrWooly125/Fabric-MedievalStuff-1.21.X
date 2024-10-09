@@ -16,21 +16,23 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLOOMY_DIRT);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUMISHROOM_CAP);
+        blockStateModelGenerator.registerLog(ModBlocks.LUMISHROOM_LOG).log(ModBlocks.LUMISHROOM_LOG).wood(ModBlocks.LUMISHROOM_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_LUMISHROOM_LOG).log(ModBlocks.STRIPPED_LUMISHROOM_LOG).wood(ModBlocks.STRIPPED_LUMISHROOM_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUMISHROOM_PLANKS);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.LUMISHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         BlockStateModelGenerator.BlockTexturePool gloomyStoneTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOOMY_STONE);
-
         gloomyStoneTexturePool.stairs(ModBlocks.GLOOMY_STONE_STAIRS);
         gloomyStoneTexturePool.slab(ModBlocks.GLOOMY_STONE_SLAB);
         gloomyStoneTexturePool.button(ModBlocks.GLOOMY_STONE_BUTTON);
         gloomyStoneTexturePool.pressurePlate(ModBlocks.GLOOMY_STONE_PRESSURE_PLATE);
 
         BlockStateModelGenerator.BlockTexturePool gloomyStoneBrickTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOOMY_STONE_BRICKS);
-
         gloomyStoneBrickTexturePool.stairs(ModBlocks.GLOOMY_STONE_BRICK_STAIRS);
         gloomyStoneBrickTexturePool.slab(ModBlocks.GLOOMY_STONE_BRICK_SLAB);
         gloomyStoneBrickTexturePool.wall(ModBlocks.GLOOMY_STONE_BRICK_WALL);
-
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_SILVER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_BLOCK);
@@ -54,6 +56,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILVER_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.SILVER_DAGGER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.WEIGHTLESS_DAGGER, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.SILVER_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_CHESTPLATE, Models.GENERATED);

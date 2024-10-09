@@ -37,12 +37,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE);
 
-
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RAW_SILVER_BLOCK,
                         ModBlocks.SILVER_BLOCK,
                         ModBlocks.SILVER_ORE);
-
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_SILVER_ORE);
@@ -50,5 +48,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.GLOOMY_STONE_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.LUMISHROOM_LOG, ModBlocks.LUMISHROOM_WOOD,
+                        ModBlocks.STRIPPED_LUMISHROOM_LOG, ModBlocks.STRIPPED_LUMISHROOM_WOOD);
     }
 }

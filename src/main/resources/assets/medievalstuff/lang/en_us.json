@@ -6,6 +6,7 @@
   "item.medievalstuff.piece_of_jelly": "Piece of Jelly",
   "item.medievalstuff.jar_of_jelly": "Jar of Jelly",
 
+
   "item.medievalstuff.silver_sword": "Silver Sword",
   "item.medievalstuff.silver_pickaxe": "Silver Pickaxe",
   "item.medievalstuff.silver_axe": "Silver Axe",
@@ -14,18 +15,30 @@
 
   "item.medievalstuff.silver_dagger": "Silver Dagger",
 
+  "item.medievalstuff.weightless_dagger": "Weightless Dagger",
+
   "item.medievalstuff.silver_helmet": "Silver Helmet",
   "item.medievalstuff.silver_chestplate": "Silver Chestplate",
   "item.medievalstuff.silver_leggings": "Silver Leggings",
   "item.medievalstuff.silver_boots": "Silver Boots",
 
+
   "block.medievalstuff.gloomy_dirt": "Gloomy Dirt",
+
   "block.medievalstuff.lumishroom_cap": "Lumishroom Cap",
+  "block.medievalstuff.lumishroom_log": "Lumishroom Log",
+  "block.medievalstuff.lumishroom_wood": "Lumishroom Wood",
+  "block.medievalstuff.stripped_lumishroom_log": "Stripped Lumishroom Log",
+  "block.medievalstuff.stripped_lumishroom_wood": "Stripped Lumishroom Wood",
+  "block.medievalstuff.lumishroom_planks": "Lumishroom Planks",
+  "block.medievalstuff.lumishroom": "Lumishroom",
+
   "block.medievalstuff.gloomy_stone": "Gloomy Stone",
   "block.medievalstuff.gloomy_stone_stairs": "Gloomy Stone Stairs",
   "block.medievalstuff.gloomy_stone_slab": "Gloomy Stone Slab",
   "block.medievalstuff.gloomy_stone_button": "Gloomy Stone Button",
   "block.medievalstuff.gloomy_stone_pressure_plate": "Gloomy Stone Pressure Plate",
+
   "block.medievalstuff.gloomy_stone_bricks": "Gloomy Stone Bricks",
   "block.medievalstuff.gloomy_stone_brick_stairs": "Gloomy Stone Brick Stairs",
   "block.medievalstuff.gloomy_stone_brick_slab": "Gloomy Stone Brick Slab",
@@ -36,9 +49,9 @@
   "block.medievalstuff.silver_ore": "Silver Ore",
   "block.medievalstuff.deepslate_silver_ore": "Deepslate Silver Ore",
 
-  "itemgroup.medievalstuff_items": "Medieval Stuff Items",
-  "itemgroup.medievalstuff_blocks": "Medieval Stuff Blocks",
-  "itemgroup.medievalstuff_equipment": "Medieval Stuff Equipment",
+
+  "itemgroup.medievalstuff": "Medieval Stuff",
+
 
   "tooltip.medievalstuff.piece_of_jelly.tooltip": "When eaten might give §5levitation§r effect for around 1.5s",
   "tooltip.medievalstuff.jar_of_jelly.tooltip": "When eaten might give §5levitation§r effect for around 7.5s"

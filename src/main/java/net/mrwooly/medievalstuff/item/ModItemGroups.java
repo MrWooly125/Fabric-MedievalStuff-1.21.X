@@ -12,25 +12,25 @@ import net.mrwooly.medievalstuff.MedievalStuff;
 import net.mrwooly.medievalstuff.block.ModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup MEDIEVALSTUFF_ITEMS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(MedievalStuff.MOD_ID, "medievalstuff_items"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff_items"))
-                    .icon(() -> new ItemStack(ModItems.RAW_SILVER)).entries((displayContext, entries) -> {
+    public static final ItemGroup MEDIEVALSTUFF = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MedievalStuff.MOD_ID, "medievalstuff"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff"))
+                    .icon(() -> new ItemStack(ModItems.SILVER_HELMET)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_SILVER);
                         entries.add(ModItems.SILVER_INGOT);
                         entries.add(ModItems.SILVER_NUGGET);
 
-
                         entries.add(ModItems.PIECE_OF_JELLY);
                         entries.add(ModItems.JAR_OF_JELLY);
-                    }).build());
 
-    public static final ItemGroup MEDIEVALSTUFF_BLOCKS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(MedievalStuff.MOD_ID, "medievalstuff_blocks"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff_blocks"))
-                    .icon(() -> new ItemStack(ModBlocks.RAW_SILVER_BLOCK)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.GLOOMY_DIRT);
+
                         entries.add(ModBlocks.LUMISHROOM_CAP);
+                        entries.add(ModBlocks.LUMISHROOM_LOG);
+                        entries.add(ModBlocks.LUMISHROOM_WOOD);
+                        entries.add(ModBlocks.STRIPPED_LUMISHROOM_LOG);
+                        entries.add(ModBlocks.STRIPPED_LUMISHROOM_WOOD);
+                        entries.add(ModBlocks.LUMISHROOM_PLANKS);
 
                         entries.add(ModBlocks.GLOOMY_STONE);
                         entries.add(ModBlocks.GLOOMY_STONE_STAIRS);
@@ -43,17 +43,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GLOOMY_STONE_BRICK_SLAB);
                         entries.add(ModBlocks.GLOOMY_STONE_BRICK_WALL);
 
+                        entries.add(ModBlocks.LUMISHROOM);
 
                         entries.add(ModBlocks.RAW_SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
-                    }).build());
 
-    public static final ItemGroup MEDIEVALSTUFF_EQUIPMENT = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(MedievalStuff.MOD_ID, "medievalstuff_equipment"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.medievalstuff_equipment"))
-                    .icon(() -> new ItemStack(ModItems.SILVER_HELMET)).entries((displayContext, entries) -> {
+
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.SILVER_PICKAXE);
                         entries.add(ModItems.SILVER_AXE);
@@ -61,6 +58,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SILVER_HOE);
 
                         entries.add(ModItems.SILVER_DAGGER);
+
+                        entries.add(ModItems.WEIGHTLESS_DAGGER);
 
                         entries.add(ModItems.SILVER_HELMET);
                         entries.add(ModItems.SILVER_CHESTPLATE);

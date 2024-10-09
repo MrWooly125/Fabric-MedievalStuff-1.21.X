@@ -5,20 +5,23 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.PlacedFeature;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.mrwooly.medievalstuff.MedievalStuff;
+import net.mrwooly.medievalstuff.block.ModBlocks;
 
 import java.util.List;
 // CF -> PF
 public class ModPlacedFeatures {
+    public static final RegistryKey<PlacedFeature> LUMISHROOM_PLACED_KEY = registerKey("lumishroom_fungi");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
+        register(context, LUMISHROOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LUMISHROOM),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 1), ModBlocks.LUMISHROOM
+                ));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
