@@ -1,7 +1,7 @@
-// 1.21	2024-10-09T16:26:34.7389507	Medieval Stuff/Block Loot Tables
+// 1.21	2024-10-13T17:39:46.226332	Medieval Stuff/Block Loot Tables
 a2fade78ccdd558ccd1c4fc8117ebfa0cb510a2f data\medievalstuff\loot_table\blocks\silver_block.json
 7c6a2c392af8094dbb79bfc4aab082461e50061a data\medievalstuff\loot_table\blocks\stripped_lumishroom_wood.json
-cead342c877aec0c2b354c1cc36370a9ca578d30 data\medievalstuff\loot_table\blocks\lumishroom_cap.json
+270a9194fa32f661c1bdb3223d1571c226a62938 data\medievalstuff\loot_table\blocks\lumishroom_cap.json
 a7e62244a254dd2625609788ead33d1e1119877c data\medievalstuff\loot_table\blocks\gloomy_stone_brick_slab.json
 3d65c95e77cf25a7572833bcfab244d650affef2 data\medievalstuff\loot_table\blocks\gloomy_stone_button.json
 8c245f9d028aa33152153513f139c7d76c005cb8 data\medievalstuff\loot_table\blocks\lumishroom_planks.json

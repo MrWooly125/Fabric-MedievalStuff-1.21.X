@@ -9,6 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mrwooly.medievalstuff.MedievalStuff;
 import net.mrwooly.medievalstuff.item.custom.DaggerItem;
+import net.mrwooly.medievalstuff.item.custom.JarOfJellyItem;
 import net.mrwooly.medievalstuff.item.custom.WeightlessDaggerItem;
 
 import java.util.List;
@@ -17,6 +18,7 @@ public class ModItems {
     public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new Item.Settings()));
     public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new Item.Settings()));
     public static final Item SILVER_NUGGET = registerItem("silver_nugget", new Item(new Item.Settings()));
+    public static final Item JAR = registerItem("jar", new Item(new Item.Settings().maxCount(8)));
 
     public static final Item PIECE_OF_JELLY = registerItem("piece_of_jelly", new Item(new Item.Settings().food(ModFoodComponents.PIECE_OF_JELLY)) {
         @Override
@@ -25,18 +27,13 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
-    public static final Item JAR_OF_JELLY = registerItem("jar_of_jelly", new Item(new Item.Settings().food(ModFoodComponents.JAR_OF_JELLY)) {
-        @Override
-        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-            tooltip.add(Text.translatable("tooltip.medievalstuff.jar_of_jelly.tooltip"));
-            super.appendTooltip(stack, context, tooltip, type);
-        }
-    });
+    public static final Item JAR_OF_JELLY = registerItem("jar_of_jelly",
+            new JarOfJellyItem(new Item.Settings().food(ModFoodComponents.JAR_OF_JELLY).recipeRemainder(ModItems.JAR).maxCount(8)));
 
 
     public static final Item SILVER_SWORD = registerItem("silver_sword",
             new SwordItem(ModToolMaterials.SILVER,
-                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SILVER, 3, -2.2f))));
+                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SILVER, 3, -2.3f))));
     public static final Item SILVER_PICKAXE = registerItem("silver_pickaxe",
             new PickaxeItem(ModToolMaterials.SILVER,
                     new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SILVER, 1f, -2.7f))));
@@ -52,11 +49,10 @@ public class ModItems {
 
     public static final Item SILVER_DAGGER = registerItem("silver_dagger",
             new DaggerItem(ModToolMaterials.SILVER,
-                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.4f, -2f))));
-
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -2f, -2f))));
     public static final Item WEIGHTLESS_DAGGER = registerItem("weightless_dagger",
             new WeightlessDaggerItem(ModToolMaterials.SILVER,
-                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.3f, -2f)), StatusEffects.LEVITATION));
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.9f, -2f)), StatusEffects.LEVITATION));
 
 
     public static final Item SILVER_HELMET = registerItem("silver_helmet",
