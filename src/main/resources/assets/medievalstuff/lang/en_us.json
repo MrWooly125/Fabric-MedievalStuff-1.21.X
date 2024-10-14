@@ -24,7 +24,8 @@
   "item.medievalstuff.silver_boots": "Silver Boots",
 
 
-  "block.medievalstuff.gloomy_dirt": "Gloomy Dirt",
+  "item.medievalstuff.jelly_spawn_egg": "Jelly Spawn Egg",
+
 
   "block.medievalstuff.lumishroom_cap": "Lumishroom Cap",
   "block.medievalstuff.lumishroom_log": "Lumishroom Log",
@@ -33,6 +34,8 @@
   "block.medievalstuff.stripped_lumishroom_wood": "Stripped Lumishroom Wood",
   "block.medievalstuff.lumishroom_planks": "Lumishroom Planks",
   "block.medievalstuff.lumishroom": "Lumishroom",
+
+  "block.medievalstuff.gloomy_dirt": "Gloomy Dirt",
 
   "block.medievalstuff.gloomy_stone": "Gloomy Stone",
   "block.medievalstuff.gloomy_stone_stairs": "Gloomy Stone Stairs",

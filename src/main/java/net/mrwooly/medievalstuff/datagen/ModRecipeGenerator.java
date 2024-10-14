@@ -222,5 +222,17 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLOOMY_STONE_BRICK_STAIRS, ModBlocks.GLOOMY_STONE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLOOMY_STONE_BRICK_SLAB, ModBlocks.GLOOMY_STONE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLOOMY_STONE_BRICK_WALL, ModBlocks.GLOOMY_STONE_BRICKS);
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LUMISHROOM_PLANKS, 4)
+                .input(ModBlocks.LUMISHROOM_LOG)
+                .criterion(hasItem(ModBlocks.LUMISHROOM_LOG), conditionsFromItem(ModBlocks.LUMISHROOM_LOG))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LUMISHROOM_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_LUMISHROOM_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_LUMISHROOM_LOG), conditionsFromItem(ModBlocks.STRIPPED_LUMISHROOM_LOG))
+                .offerTo(exporter, Identifier.of(MedievalStuff.MOD_ID, "lumishroom_planks_from_stripped_lumishroom_log"));
+
     }
 }

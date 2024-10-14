@@ -4,9 +4,13 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.util.Identifier;
 import net.mrwooly.medievalstuff.block.ModBlocks;
 import net.mrwooly.medievalstuff.item.ModItems;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -64,5 +68,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILVER_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.JELLY_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

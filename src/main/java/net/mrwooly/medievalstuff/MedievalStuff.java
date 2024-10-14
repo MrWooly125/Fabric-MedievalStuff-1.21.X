@@ -2,9 +2,12 @@ package net.mrwooly.medievalstuff;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.mrwooly.medievalstuff.block.ModBlocks;
+import net.mrwooly.medievalstuff.entity.ModEntities;
+import net.mrwooly.medievalstuff.entity.custom.JellyEntity;
 import net.mrwooly.medievalstuff.item.ModItemGroups;
 import net.mrwooly.medievalstuff.item.ModItems;
 import net.mrwooly.medievalstuff.world.gen.ModWorldGeneration;
@@ -22,10 +25,14 @@ public class MedievalStuff implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
+		ModEntities.registerModEntities();
+
 		ModWorldGeneration.generateModWorldGeneration();
 
 		registerStrippables();
 		registerFlammables();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.JELLY, JellyEntity.createJellyAttributes());
 	}
 
 	private static void registerStrippables() {

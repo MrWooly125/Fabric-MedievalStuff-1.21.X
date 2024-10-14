@@ -1,0 +1,62 @@
+{
+  "item.medievalstuff.raw_silver": "Сырое серебро",
+  "item.medievalstuff.silver_ingot": "Серебряный слиток",
+  "item.medievalstuff.silver_nugget": "Кусочек серебра",
+  "item.medievalstuff.jar": "Банка",
+
+  "item.medievalstuff.piece_of_jelly": "Кусочек желе",
+  "item.medievalstuff.jar_of_jelly": "Банка желе",
+
+
+  "item.medievalstuff.silver_sword": "Серебряный меч",
+  "item.medievalstuff.silver_pickaxe": "Серебряная кирка",
+  "item.medievalstuff.silver_axe": "Серебряный топор",
+  "item.medievalstuff.silver_shovel": "Серебряная лопата",
+  "item.medievalstuff.silver_hoe": "Серебряная мотыга",
+
+  "item.medievalstuff.silver_dagger": "Серебряный кинжал",
+
+  "item.medievalstuff.weightless_dagger": "Невесомый кинжал",
+
+  "item.medievalstuff.silver_helmet": "Серебряный шлем",
+  "item.medievalstuff.silver_chestplate": "Серебряный нагрудник",
+  "item.medievalstuff.silver_leggings": "Серебряные поножи",
+  "item.medievalstuff.silver_boots": "Серебряные ботинки",
+
+
+  "item.medievalstuff.jelly_spawn_egg": "Яйцо призыва желейки",
+
+
+  "block.medievalstuff.lumishroom_cap": "Люмигибная шляпка",
+  "block.medievalstuff.lumishroom_log": "Люмигрибное бревно",
+  "block.medievalstuff.lumishroom_wood": "Люмигрибная древесина",
+  "block.medievalstuff.stripped_lumishroom_log": "Обтёсанное люмигрибное бревно",
+  "block.medievalstuff.stripped_lumishroom_wood": "Обтёсанная люмигрибная древесина",
+  "block.medievalstuff.lumishroom_planks": "Люмигрибные доски",
+  "block.medievalstuff.lumishroom": "Люмигриб",
+
+  "block.medievalstuff.gloomy_dirt": "Мрачная земля",
+
+  "block.medievalstuff.gloomy_stone": "Мрачный камень",
+  "block.medievalstuff.gloomy_stone_stairs": "Ступеньки из мрачного камня",
+  "block.medievalstuff.gloomy_stone_slab": "Плита из мрачного камня",
+  "block.medievalstuff.gloomy_stone_button": "Кнопка из мрачного камня",
+  "block.medievalstuff.gloomy_stone_pressure_plate": "Нажимная плита из мрачного камня",
+
+  "block.medievalstuff.gloomy_stone_bricks": "Кирпичи из мрачного камня",
+  "block.medievalstuff.gloomy_stone_brick_stairs": "Ступеньки из мрачнокаменных кирпичей",
+  "block.medievalstuff.gloomy_stone_brick_slab": "Плита из мрачнокаменных кирпичей",
+  "block.medievalstuff.gloomy_stone_brick_wall": "Стена из мрачнокаменных кирпичей",
+
+  "block.medievalstuff.raw_silver_block": "Блок сырого серебра",
+  "block.medievalstuff.silver_block": "Серебряный блок",
+  "block.medievalstuff.silver_ore": "Серебряная руда",
+  "block.medievalstuff.deepslate_silver_ore": "Глубинносланцевая серебряная руда",
+
+
+  "itemgroup.medievalstuff": "Medieval Stuff",
+
+
+  "tooltip.medievalstuff.piece_of_jelly.tooltip": "При поедании может дать §5левитацию§r на около 1.5с",
+  "tooltip.medievalstuff.jar_of_jelly.tooltip": "При поедании может дать §5левитацию§r на около 7.5с"
+}

@@ -24,7 +24,22 @@ public class ModItemGroups {
                         entries.add(ModItems.PIECE_OF_JELLY);
                         entries.add(ModItems.JAR_OF_JELLY);
 
-                        entries.add(ModBlocks.GLOOMY_DIRT);
+
+                        entries.add(ModItems.SILVER_SWORD);
+                        entries.add(ModItems.SILVER_PICKAXE);
+                        entries.add(ModItems.SILVER_AXE);
+                        entries.add(ModItems.SILVER_SHOVEL);
+                        entries.add(ModItems.SILVER_HOE);
+
+                        entries.add(ModItems.SILVER_DAGGER);
+
+                        entries.add(ModItems.WEIGHTLESS_DAGGER);
+
+                        entries.add(ModItems.SILVER_HELMET);
+                        entries.add(ModItems.SILVER_CHESTPLATE);
+                        entries.add(ModItems.SILVER_LEGGINGS);
+                        entries.add(ModItems.SILVER_BOOTS);
+
 
                         entries.add(ModBlocks.LUMISHROOM_CAP);
                         entries.add(ModBlocks.LUMISHROOM_LOG);
@@ -32,6 +47,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_LUMISHROOM_LOG);
                         entries.add(ModBlocks.STRIPPED_LUMISHROOM_WOOD);
                         entries.add(ModBlocks.LUMISHROOM_PLANKS);
+
+                        entries.add(ModBlocks.GLOOMY_DIRT);
 
                         entries.add(ModBlocks.GLOOMY_STONE);
                         entries.add(ModBlocks.GLOOMY_STONE_STAIRS);
@@ -52,20 +69,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
 
 
-                        entries.add(ModItems.SILVER_SWORD);
-                        entries.add(ModItems.SILVER_PICKAXE);
-                        entries.add(ModItems.SILVER_AXE);
-                        entries.add(ModItems.SILVER_SHOVEL);
-                        entries.add(ModItems.SILVER_HOE);
-
-                        entries.add(ModItems.SILVER_DAGGER);
-
-                        entries.add(ModItems.WEIGHTLESS_DAGGER);
-
-                        entries.add(ModItems.SILVER_HELMET);
-                        entries.add(ModItems.SILVER_CHESTPLATE);
-                        entries.add(ModItems.SILVER_LEGGINGS);
-                        entries.add(ModItems.SILVER_BOOTS);
+                        entries.add(ModItems.JELLY_SPAWN_EGG);
                     }).build());
 
     public static void registerItemGroups() {
