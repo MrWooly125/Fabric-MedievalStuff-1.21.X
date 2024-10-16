@@ -18,7 +18,6 @@
 
   "item.medievalstuff.weightless_dagger": "Weightless Dagger",
 
-  "item.medievalstuff.levitation_tiara": "Levitation Tiara",
   "item.medievalstuff.silver_helmet": "Silver Helmet",
   "item.medievalstuff.silver_chestplate": "Silver Chestplate",
   "item.medievalstuff.silver_leggings": "Silver Leggings",
@@ -60,5 +59,4 @@
 
   "tooltip.medievalstuff.piece_of_jelly.tooltip": "When eaten might give §5levitation§r effect for around 1.5s",
   "tooltip.medievalstuff.jar_of_jelly.tooltip": "When eaten might give §dlevitation§r effect for around 7.5s",
-  "tooltip.medievalstuff.levitation_tiara_description.tooltip": "Press §eAlt§r while wearing to get diamonds!"
 }
