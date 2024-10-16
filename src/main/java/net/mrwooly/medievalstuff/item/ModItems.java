@@ -67,6 +67,10 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(16))));
 
+    public static final Item LEVITATION_TIARA = registerItem("levitation_tiara",
+            new LevitationTiaraItem(ModArmorMaterials.LEVITATION_TIARA, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
 
     public static final Item JELLY_SPAWN_EGG = registerItem("jelly_spawn_egg",
             new SpawnEggItem(ModEntities.JELLY, 0x465ae0, 0x545978, new Item.Settings()));

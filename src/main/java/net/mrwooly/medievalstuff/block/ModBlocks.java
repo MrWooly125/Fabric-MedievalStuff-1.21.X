@@ -17,18 +17,18 @@ public class ModBlocks {
 
 
     public static final Block LUMISHROOM_LOG = registerBlock("lumishroom_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(1.5f).sounds(BlockSoundGroup.NETHER_STEM)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(1.5f).sounds(BlockSoundGroup.NETHER_STEM).luminance(state -> 3)));
     public static final Block LUMISHROOM_WOOD = registerBlock("lumishroom_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(1.5f).sounds(BlockSoundGroup.NETHER_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(1.5f).sounds(BlockSoundGroup.NETHER_WOOD).luminance(state -> 3)));
     public static final Block STRIPPED_LUMISHROOM_LOG = registerBlock("stripped_lumishroom_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG).strength(1.5f).sounds(BlockSoundGroup.NETHER_STEM)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG).strength(1.5f).sounds(BlockSoundGroup.NETHER_STEM).luminance(state -> 2)));
     public static final Block STRIPPED_LUMISHROOM_WOOD = registerBlock("stripped_lumishroom_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD).strength(1.5f).sounds(BlockSoundGroup.NETHER_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD).strength(1.5f).sounds(BlockSoundGroup.NETHER_WOOD).luminance(state -> 2)));
 
     public static final Block LUMISHROOM_PLANKS = registerBlock("lumishroom_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(1.5f).sounds(BlockSoundGroup.NETHER_WOOD)));
     public static final Block LUMISHROOM_CAP = registerBlock("lumishroom_cap",
-            new Block(AbstractBlock.Settings.copy(Blocks.WARPED_WART_BLOCK).strength(0.5f).luminance(state -> 3)));
+            new Block(AbstractBlock.Settings.copy(Blocks.WARPED_WART_BLOCK).strength(0.5f).luminance(state -> 4)));
 
     public static final Block LUMISHROOM = registerBlock("lumishroom",
             new SaplingBlock(ModSaplingGenerators.LUMISHROOM, AbstractBlock.Settings.copy(Blocks.WARPED_FUNGUS).luminance(state -> 2)));
