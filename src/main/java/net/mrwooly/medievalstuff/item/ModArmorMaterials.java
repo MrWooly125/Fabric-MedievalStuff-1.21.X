@@ -18,7 +18,6 @@ import java.util.function.Supplier;
 public class ModArmorMaterials {
     public static final RegistryEntry<ArmorMaterial> SILVER_ARMOR_MATERIAL = registerArmorMaterial("silver_armor_material",
             () -> new ArmorMaterial(
-
                     Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
                         map.put(ArmorItem.Type.HELMET, 2);
                         map.put(ArmorItem.Type.CHESTPLATE, 5);

@@ -165,6 +165,17 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.GLASS_PANE), conditionsFromItem(Blocks.GLASS_PANE))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PIECE_OF_JELLY, 4)
+                .pattern("   ")
+                .pattern("SGW")
+                .pattern("LSG")
+                .input('S', Items.SUGAR)
+                .input('W', Items.WATER_BUCKET)
+                .input('G', Items.GLOWSTONE_DUST)
+                .input('L', ModBlocks.LUMISHROOM)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.JAR_OF_JELLY, 1)
                 .pattern("PPP")
                 .pattern("PPP")

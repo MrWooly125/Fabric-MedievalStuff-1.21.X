@@ -9,9 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mrwooly.medievalstuff.MedievalStuff;
 import net.mrwooly.medievalstuff.entity.ModEntities;
-import net.mrwooly.medievalstuff.item.custom.DaggerItem;
-import net.mrwooly.medievalstuff.item.custom.JarOfJellyItem;
-import net.mrwooly.medievalstuff.item.custom.WeightlessDaggerItem;
+import net.mrwooly.medievalstuff.item.custom.*;
 
 import java.util.List;
 
