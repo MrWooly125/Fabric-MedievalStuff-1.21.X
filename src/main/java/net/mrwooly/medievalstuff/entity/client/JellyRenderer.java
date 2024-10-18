@@ -24,7 +24,6 @@ public class JellyRenderer extends MobEntityRenderer<JellyEntity, JellyModel> {
         if(livingEntity.isBaby()) {
             matrixStack.scale(0.5f, 0.5f, 0.5f);
         }
-
         super.render(livingEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }
 }

@@ -26,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_LUMISHROOM_LOG).log(ModBlocks.STRIPPED_LUMISHROOM_LOG).wood(ModBlocks.STRIPPED_LUMISHROOM_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUMISHROOM_PLANKS);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.LUMISHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerItemModel(ModBlocks.LUMISHROOM);
 
         BlockStateModelGenerator.BlockTexturePool gloomyStoneTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOOMY_STONE);
         gloomyStoneTexturePool.stairs(ModBlocks.GLOOMY_STONE_STAIRS);
@@ -63,6 +64,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILVER_DAGGER, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.WEIGHTLESS_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WEIGHTLESS_DAGGER_TIER_2, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.SILVER_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_CHESTPLATE, Models.GENERATED);

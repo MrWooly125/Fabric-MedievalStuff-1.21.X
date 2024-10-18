@@ -10,6 +10,7 @@ import net.mrwooly.medievalstuff.entity.ModEntities;
 import net.mrwooly.medievalstuff.entity.custom.JellyEntity;
 import net.mrwooly.medievalstuff.item.ModItemGroups;
 import net.mrwooly.medievalstuff.item.ModItems;
+import net.mrwooly.medievalstuff.world.gen.ModEntitySpawns;
 import net.mrwooly.medievalstuff.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,6 +34,8 @@ public class MedievalStuff implements ModInitializer {
 		registerFlammables();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.JELLY, JellyEntity.createJellyAttributes());
+
+		ModEntitySpawns.addSpawns();
 	}
 
 	private static void registerStrippables() {

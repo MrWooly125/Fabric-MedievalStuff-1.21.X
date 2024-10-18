@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     SILVER(ModTags.Blocks.INCORRECT_FOR_SILVER_TOOL,
-            300, 6.5F, 2.0F, 18, () -> Ingredient.ofItems(ModItems.SILVER_INGOT));
+            325, 6.5F, 2.0F, 18, () -> Ingredient.ofItems(ModItems.SILVER_INGOT));
 
 
     private final TagKey<Block> inverseTag;

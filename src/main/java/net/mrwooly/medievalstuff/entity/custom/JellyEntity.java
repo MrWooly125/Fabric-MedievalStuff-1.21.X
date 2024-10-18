@@ -5,6 +5,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -12,6 +13,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 import net.mrwooly.medievalstuff.entity.ModEntities;
 import org.jetbrains.annotations.Nullable;
@@ -63,6 +66,12 @@ public class JellyEntity extends AnimalEntity {
                 .add(EntityAttributes.GENERIC_SAFE_FALL_DISTANCE, 64);
     }
 
+
+
+        protected int getTicksUntilNextJump() {
+            return this.random.nextInt(30) + 10;
+        }
+
     @Override
     public boolean isBreedingItem(ItemStack stack) {
         return stack.isOf(Items.CRIMSON_FUNGUS);
@@ -72,5 +81,29 @@ public class JellyEntity extends AnimalEntity {
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
         return ModEntities.JELLY.create(world);
+    }
+
+    /* SOUNDS */
+
+    @Nullable
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return SoundEvents.ENTITY_SLIME_SQUISH_SMALL;
+    }
+
+    protected SoundEvent getJumpSound() {
+         return SoundEvents.ENTITY_SLIME_JUMP_SMALL;
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getHurtSound(DamageSource source) {
+        return SoundEvents.ENTITY_SLIME_HURT_SMALL;
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getDeathSound() {
+        return SoundEvents.ENTITY_SLIME_DEATH_SMALL;
     }
 }

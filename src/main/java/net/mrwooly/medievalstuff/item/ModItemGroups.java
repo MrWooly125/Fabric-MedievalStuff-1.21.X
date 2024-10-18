@@ -33,6 +33,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.SILVER_DAGGER);
                         entries.add(ModItems.WEIGHTLESS_DAGGER);
+                        entries.add(ModItems.WEIGHTLESS_DAGGER_TIER_2);
 
                         entries.add(ModItems.SILVER_HELMET);
                         entries.add(ModItems.SILVER_CHESTPLATE);

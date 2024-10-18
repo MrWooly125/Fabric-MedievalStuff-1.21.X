@@ -1,5 +1,6 @@
 package net.mrwooly.medievalstuff.item;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -51,7 +52,46 @@ public class ModItems {
                     new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -2f, -2f))));
     public static final Item WEIGHTLESS_DAGGER = registerItem("weightless_dagger",
             new WeightlessDaggerItem(ModToolMaterials.SILVER,
-                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.9f, -2f)), StatusEffects.LEVITATION));
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -2f, -2f)), StatusEffects.LEVITATION) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_1.tooltip"));
+                    if(Screen.hasControlDown()) {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_2.tooltip"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_4.tooltip"));
+                    }
+                    if(Screen.hasAltDown()) {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_3.tooltip"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_5.tooltip"));
+                    }
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+    public static final Item WEIGHTLESS_DAGGER_TIER_2 = registerItem("weightless_dagger_tier_2",
+            new WeightlessDaggerTier2tem(ModToolMaterials.SILVER,
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.9f, -2f)), StatusEffects.LEVITATION) {
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_1.tooltip"));
+                    if(Screen.hasControlDown()) {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_2.tooltip"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_5.tooltip"));
+                    }
+                    if(Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_3.tooltip"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_6.tooltip"));
+                    }
+                    if(Screen.hasAltDown()) {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_4.tooltip"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_7.tooltip"));
+                    }
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
 
     public static final Item SILVER_HELMET = registerItem("silver_helmet",

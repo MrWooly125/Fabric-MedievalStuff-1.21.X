@@ -83,6 +83,15 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('S', ModItems.SILVER_DAGGER)
                 .criterion(hasItem(ModItems.SILVER_DAGGER), conditionsFromItem(ModItems.SILVER_DAGGER))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WEIGHTLESS_DAGGER_TIER_2, 1)
+                .pattern("PP ")
+                .pattern("JPP")
+                .pattern("WJJ")
+                .input('P', ModItems.PIECE_OF_JELLY)
+                .input('J', ModItems.JAR_OF_JELLY)
+                .input('W', ModItems.WEIGHTLESS_DAGGER)
+                .criterion(hasItem(ModItems.WEIGHTLESS_DAGGER), conditionsFromItem(ModItems.WEIGHTLESS_DAGGER))
+                .offerTo(exporter);
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SILVER_PICKAXE, 1)

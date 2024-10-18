@@ -19,7 +19,10 @@
       }
     },
     "valid_base_block": {
-      "Name": "minecraft:moss_block"
+      "Name": "minecraft:grass_block",
+      "Properties": {
+        "snowy": "false"
+      }
     }
   }
 }

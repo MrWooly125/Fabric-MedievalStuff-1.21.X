@@ -17,7 +17,7 @@ public class WeightlessDaggerItem extends DaggerItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(effect, 50, 1), attacker);
+        target.addStatusEffect(new StatusEffectInstance(effect, 50, 0), attacker);
         return super.postHit(stack, target, attacker);
     }
 }
