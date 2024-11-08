@@ -31,52 +31,52 @@ public class WeightlessDaggerTier2tem extends DaggerItem {
     }
 
     int counter = 0;
-    int a = 0;
+    int x = 0;
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if(a == 0) {
+        if(x == 0) {
             if(counter == 4) {
                 int chanceToAddLevitation3 = MathHelper.nextInt(Random.createLocal(), 1, 1);
                 if (chanceToAddLevitation3 == 1) {
                     target.addStatusEffect(new StatusEffectInstance(effect, 100, 1), attacker);
-                    a = 1;
+                    x = 1;
                 }
             }
         }
-        if(a == 0) {
+        if(x == 0) {
             if(counter == 3) {
                 int chanceToAddLevitation4 = MathHelper.nextInt(Random.createLocal(), 1, 2);
                 if (chanceToAddLevitation4 == 1) {
                     target.addStatusEffect(new StatusEffectInstance(effect, 80, 1), attacker);
-                    a = 1;
+                    x = 1;
                 } else {
                     counter = 4;
                 }
             }
         }
-         if(a == 0) {
+         if(x == 0) {
              if(counter == 2) {
                  int chanceToAddLevitation3 = MathHelper.nextInt(Random.createLocal(), 1, 3);
                  if (chanceToAddLevitation3 == 1) {
                      target.addStatusEffect(new StatusEffectInstance(effect, 60, 1), attacker);
-                     a = 1;
+                     x = 1;
                  } else {
                      counter = 3;
                  }
              }
          }
-        if(a == 0) {
+        if(x == 0) {
             if(counter == 1) {
                 int chanceToAddLevitation2 = MathHelper.nextInt(Random.createLocal(), 1, 4);
                 if (chanceToAddLevitation2 == 1) {
                     target.addStatusEffect(new StatusEffectInstance(effect, 40, 1), attacker);
-                    a = 1;
+                    x = 1;
                 } else {
                     counter = 2;
                 }
             }
         }
-        if(a == 0) {
+        if(x == 0) {
             if (counter == 0) {
                 int chanceToAddLevitation1 = MathHelper.nextInt(Random.createLocal(), 1, 5);
                 if (chanceToAddLevitation1 == 1) {
@@ -86,9 +86,9 @@ public class WeightlessDaggerTier2tem extends DaggerItem {
                 }
             }
         }
-        if(a == 1) {
+        if(x == 1) {
             counter = 0;
-            a = 0;
+            x = 0;
         }
         return super.postHit(stack, target, attacker);
     }

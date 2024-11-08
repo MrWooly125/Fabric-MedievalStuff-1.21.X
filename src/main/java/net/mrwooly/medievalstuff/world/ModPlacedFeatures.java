@@ -27,7 +27,7 @@ public class ModPlacedFeatures {
 
         register(context, LUMISHROOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LUMISHROOM),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(1, 0.01f, 1), ModBlocks.LUMISHROOM
+                        PlacedFeatures.createCountExtraModifier(1, 0.001f, 1), ModBlocks.LUMISHROOM
                 ));
 
 
@@ -36,13 +36,13 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-15), YOffset.fixed(150))));
 
         register(context, SMALL_SILVER_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SMALL_SILVER_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(15,
+                ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-60), YOffset.fixed(275))));
         register(context, SILVER_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SILVER_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(12,
+                ModOrePlacement.modifiersWithCount(11,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-70), YOffset.fixed(225))));
         register(context, BIG_SILVER_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BIG_SILVER_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(9,
+                ModOrePlacement.modifiersWithCount(8,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(175))));
     }
 

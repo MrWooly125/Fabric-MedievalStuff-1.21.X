@@ -21,17 +21,35 @@ public class WeightlessDaggerItem extends DaggerItem {
     int x = 0;
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if(counter == 1) {
-            target.addStatusEffect(new StatusEffectInstance(effect, 75, 0), attacker);
-            x = 1;
+        if(x == 0) {
+            if(counter == 2) {
+                int chanceToAddLevitation3 = MathHelper.nextInt(Random.createLocal(), 1, 2);
+                if (chanceToAddLevitation3 == 1) {
+                    target.addStatusEffect(new StatusEffectInstance(effect, 95, 0), attacker);
+                    x = 1;
+                }
+            }
         }
-        if (counter == 0) {
-                int chanceToAddLevitation1 = MathHelper.nextInt(Random.createLocal(), 1, 100);
+        if(x == 0) {
+            if(counter == 1) {
+                int chanceToAddLevitation2 = MathHelper.nextInt(Random.createLocal(), 1, 3);
+                if (chanceToAddLevitation2 == 1) {
+                    target.addStatusEffect(new StatusEffectInstance(effect, 85, 0), attacker);
+                    x = 1;
+                } else {
+                    counter = 2;
+                }
+            }
+        }
+        if(x == 0) {
+            if(counter == 0) {
+                int chanceToAddLevitation1 = MathHelper.nextInt(Random.createLocal(), 1, 4);
                 if (chanceToAddLevitation1 == 1) {
-                    target.addStatusEffect(new StatusEffectInstance(effect, 40, 0), attacker);
+                    target.addStatusEffect(new StatusEffectInstance(effect, 75, 0), attacker);
                 } else {
                     counter = 1;
                 }
+            }
         }
         if(x == 1) {
             counter = 0;

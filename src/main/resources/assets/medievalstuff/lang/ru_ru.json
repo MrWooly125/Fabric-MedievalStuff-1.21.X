@@ -61,13 +61,13 @@
   "tooltip.medievalstuff.jar_of_jelly.tooltip": "При поедании может дать §5левитацию§r на около 7.5с",
 
   "tooltip.medievalstuff.weightless_dagger_1.tooltip": "§3Уровень 1§r",
-  "tooltip.medievalstuff.weightless_dagger_2.tooltip": "Ненадолго накладывает левитацию на врагов",
+  "tooltip.medievalstuff.weightless_dagger_2.tooltip": "Имеет шанс наложить левитацию на врагов",
   "tooltip.medievalstuff.weightless_dagger_3.tooltip": "§8Вы чувствуете что-то, когда держите кинжал в руках.§r",
   "tooltip.medievalstuff.weightless_dagger_4.tooltip": "Нажмите §6Ctrl§r, чтобы увидеть описание способности",
   "tooltip.medievalstuff.weightless_dagger_5.tooltip": "Нажмите §6Alt§r, чтобы увидеть описание",
 
   "tooltip.medievalstuff.weightless_dagger_tier_2_1.tooltip": "§3Уровень 2§r",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_2.tooltip": "Накладывает на врагов чуть более сильную левитацию, чем §3уровень 1§r",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_2.tooltip": "Имеет повышенный шанс наложить на врагов чуть более сильную левитацию, чем §3уровень 1§r",
   "tooltip.medievalstuff.weightless_dagger_tier_2_3.tooltip": "§6Пкм§r, чтобы заставить себя левитировать",
   "tooltip.medievalstuff.weightless_dagger_tier_2_4.tooltip": "§8Ощущение стало сильнее. Вы начинаете чувствовать лёгкий дискомфорт. Кинжал хочет чего-то...§r",
   "tooltip.medievalstuff.weightless_dagger_tier_2_5.tooltip": "Нажмите §6Ctrl§r, чтобы увидеть описание первой способности",
