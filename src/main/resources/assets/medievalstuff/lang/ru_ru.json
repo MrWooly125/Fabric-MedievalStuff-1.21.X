@@ -36,7 +36,6 @@
   "block.medievalstuff.lumishroom_planks": "Люмигрибные доски",
   "block.medievalstuff.lumishroom": "Люмигриб",
 
-  "block.medievalstuff.gloomy_dirt": "Мрачная земля",
 
   "block.medievalstuff.gloomy_stone": "Мрачный камень",
   "block.medievalstuff.gloomy_stone_stairs": "Ступеньки из мрачного камня",
@@ -73,5 +72,8 @@
   "tooltip.medievalstuff.weightless_dagger_tier_2_4.tooltip": "§8Ощущение стало сильнее. Вы начинаете чувствовать лёгкий дискомфорт. Кинжал хочет чего-то...§r",
   "tooltip.medievalstuff.weightless_dagger_tier_2_5.tooltip": "Нажмите §6Ctrl§r, чтобы увидеть описание первой способности",
   "tooltip.medievalstuff.weightless_dagger_tier_2_6.tooltip": "Нажмите §6Shift§r, чтобы увидеть описание второй способности",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_7.tooltip": "Нижмите §6Alt§r, чтобы увидеть описание"
+  "tooltip.medievalstuff.weightless_dagger_tier_2_7.tooltip": "Нижмите §6Alt§r, чтобы увидеть описание",
+
+  "death.attack.weightlessDaggerAbilityHit": "%1$s был(а) настолько глуп, что убил себя, используя одну из способностей Невесомого Кинжала",
+  "death.attack.weightlessDaggerAbilityHit.player": "%1$s был(а) настолько глуп, что убил себя, используя одну из способностей Невесомого Кинжала, пытаясь сбежать от %2$s"
 }

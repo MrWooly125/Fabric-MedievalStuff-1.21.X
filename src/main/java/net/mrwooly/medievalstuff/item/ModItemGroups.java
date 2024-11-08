@@ -48,8 +48,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_LUMISHROOM_WOOD);
                         entries.add(ModBlocks.LUMISHROOM_PLANKS);
 
-                        entries.add(ModBlocks.GLOOMY_DIRT);
-
                         entries.add(ModBlocks.GLOOMY_STONE);
                         entries.add(ModBlocks.GLOOMY_STONE_STAIRS);
                         entries.add(ModBlocks.GLOOMY_STONE_SLAB);

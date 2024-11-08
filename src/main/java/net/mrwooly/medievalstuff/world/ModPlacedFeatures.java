@@ -17,7 +17,6 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> LUMISHROOM_PLACED_KEY = registerKey("lumishroom_placed");
 
-    public static final RegistryKey<PlacedFeature> GLOOMY_DIRT_VEIN_PLACED_KEY = registerKey("gloomy_dirt_vein_placed");
     public static final RegistryKey<PlacedFeature> GLOOMY_STONE_VEIN_PLACED_KEY = registerKey("gloomy_stone_vein_placed");
     public static final RegistryKey<PlacedFeature> SMALL_SILVER_ORE_PLACED_KEY = registerKey("small_silver_ore_placed");
     public static final RegistryKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
@@ -32,9 +31,6 @@ public class ModPlacedFeatures {
                 ));
 
 
-        register(context, GLOOMY_DIRT_VEIN_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GLOOMY_DIRT_VEIN_KEY),
-                ModOrePlacement.modifiersWithCount(1, //Veins per chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(25), YOffset.fixed(130))));
         register(context, GLOOMY_STONE_VEIN_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GLOOMY_STONE_VEIN_KEY),
                 ModOrePlacement.modifiersWithCount(1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-15), YOffset.fixed(150))));

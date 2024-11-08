@@ -30,7 +30,7 @@ public class DaggerItem extends SwordItem {
         );
     }
 
-    public static AttributeModifiersComponent createAttributeModifiers(ToolMaterial material, int baseAttackDamage, float attackSpeed, float attackRange) {
+    public static AttributeModifiersComponent createAttributeModifiers(ToolMaterial material, int baseAttackDamage, float attackSpeed, float attackRange, float blockRange) {
         return AttributeModifiersComponent.builder()
                 .add(
                         EntityAttributes.GENERIC_ATTACK_DAMAGE,
@@ -47,6 +47,11 @@ public class DaggerItem extends SwordItem {
                 .add(
                         EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
                         new EntityAttributeModifier(ATTACK_RANGE, (double)attackRange, EntityAttributeModifier.Operation.ADD_VALUE),
+                        AttributeModifierSlot.MAINHAND
+                )
+                .add(
+                        EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                        new EntityAttributeModifier(BLOCK_RANGE, (double)blockRange, EntityAttributeModifier.Operation.ADD_VALUE),
                         AttributeModifierSlot.MAINHAND
                 )
                 .build();
@@ -68,4 +73,5 @@ public class DaggerItem extends SwordItem {
     }
 
     public static final Identifier ATTACK_RANGE = Identifier.of("attack_range");
+    public static final Identifier BLOCK_RANGE = Identifier.of("block_range");
 }

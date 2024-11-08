@@ -26,8 +26,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.GLOOMY_DIRT);
-
         addDrop(ModBlocks.LUMISHROOM_CAP);
         addDrop(ModBlocks.LUMISHROOM_LOG);
         addDrop(ModBlocks.LUMISHROOM_WOOD);

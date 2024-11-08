@@ -8,8 +8,6 @@ import net.mrwooly.medievalstuff.world.ModPlacedFeatures;
 public class ModOreGeneration {
     public static void generateOres() {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.GLOOMY_DIRT_VEIN_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.GLOOMY_STONE_VEIN_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),

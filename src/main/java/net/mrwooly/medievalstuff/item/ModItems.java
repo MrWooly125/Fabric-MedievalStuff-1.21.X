@@ -49,10 +49,10 @@ public class ModItems {
 
     public static final Item SILVER_DAGGER = registerItem("silver_dagger",
             new DaggerItem(ModToolMaterials.SILVER,
-                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -2f, -2f))));
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -2f, -1f, -1f))));
     public static final Item WEIGHTLESS_DAGGER = registerItem("weightless_dagger",
             new WeightlessDaggerItem(ModToolMaterials.SILVER,
-                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -2f, -2f)), StatusEffects.LEVITATION) {
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -2f, -1f, -1f)), StatusEffects.LEVITATION) {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_1.tooltip"));
@@ -71,7 +71,7 @@ public class ModItems {
             });
     public static final Item WEIGHTLESS_DAGGER_TIER_2 = registerItem("weightless_dagger_tier_2",
             new WeightlessDaggerTier2tem(ModToolMaterials.SILVER,
-                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.9f, -2f)), StatusEffects.LEVITATION) {
+                    new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ModToolMaterials.SILVER, 1, -1.9f, -1f, -1f)), StatusEffects.LEVITATION) {
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_tier_2_1.tooltip"));
                     if(Screen.hasControlDown()) {

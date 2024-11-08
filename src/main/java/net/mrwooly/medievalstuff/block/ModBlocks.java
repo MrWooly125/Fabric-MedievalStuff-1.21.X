@@ -12,10 +12,6 @@ import net.mrwooly.medievalstuff.MedievalStuff;
 import net.mrwooly.medievalstuff.world.tree.ModSaplingGenerators;
 
 public class ModBlocks {
-    public static final Block GLOOMY_DIRT = registerBlock("gloomy_dirt",
-            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRAVEL).strength(0.6f).requiresTool()));
-
-
     public static final Block LUMISHROOM_LOG = registerBlock("lumishroom_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(1.5f).sounds(BlockSoundGroup.NETHER_STEM).luminance(state -> 3)));
     public static final Block LUMISHROOM_WOOD = registerBlock("lumishroom_wood",
