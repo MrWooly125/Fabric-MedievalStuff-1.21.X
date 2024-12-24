@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "medievalstuff:item/spear_of_wind"
+  }
+}

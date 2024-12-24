@@ -74,8 +74,6 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().sounds(BlockSoundGroup.DEEPSLATE)
                     .strength(4f).requiresTool()));
 
-    public static final Block COPY_BLOCK = registerBlock("copy_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

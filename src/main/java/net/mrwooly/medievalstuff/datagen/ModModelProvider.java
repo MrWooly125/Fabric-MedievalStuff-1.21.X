@@ -53,23 +53,39 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PIECE_OF_JELLY, Models.GENERATED);
         itemModelGenerator.register(ModItems.JAR_OF_JELLY, Models.GENERATED);
 
+
+        itemModelGenerator.register(ModItems.SILVER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WEIGHTLESS_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WEIGHTLESS_DAGGER_TIER_2, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.SILVER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_HOE, Models.HANDHELD);
 
-        itemModelGenerator.register(ModItems.SILVER_DAGGER, Models.HANDHELD);
-
-        itemModelGenerator.register(ModItems.WEIGHTLESS_DAGGER, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.WEIGHTLESS_DAGGER_TIER_2, Models.HANDHELD);
-
         itemModelGenerator.register(ModItems.SILVER_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_BOOTS, Models.GENERATED);
 
+
+        itemModelGenerator.register(ModItems.CHARGED_LIFE_GIVING_TOTEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DISCHARGED_LIFE_GIVING_TOTEM, Models.GENERATED);
+
+
+        itemModelGenerator.register(ModItems.SPEAR_OF_WIND, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.ENDERIUM_BLADE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.RITUAL_DAGGER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.MAGIC_CANE, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.JELLY_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+
+        itemModelGenerator.register(ModItems.WIND_STAFF, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STORM_STAFF, Models.HANDHELD);
     }
 }

@@ -5,7 +5,31 @@
   "item.medievalstuff.jar": "Jar",
 
   "item.medievalstuff.piece_of_jelly": "Piece of Jelly",
+  "tooltip.medievalstuff.piece_of_jelly.tooltip": "When eaten might give §5levitation§r effect for around 1.5s",
+
   "item.medievalstuff.jar_of_jelly": "Jar of Jelly",
+  "tooltip.medievalstuff.jar_of_jelly.tooltip": "When eaten might give §dlevitation§r effect for around 7.5s",
+
+
+
+  "item.medievalstuff.silver_dagger": "Silver Dagger",
+
+  "item.medievalstuff.weightless_dagger": "Weightless Dagger",
+  "tooltip.medievalstuff.weightless_dagger_1.tooltip": "§3Tier 1§r",
+  "tooltip.medievalstuff.weightless_dagger_2.tooltip": "Has a chance to give your enemies levitation for a bit",
+  "tooltip.medievalstuff.weightless_dagger_3.tooltip": "§8You feel something while keeping dagger in hands.§r",
+  "tooltip.medievalstuff.weightless_dagger_4.tooltip": "Press §6Ctrl§r to see the ability description",
+  "tooltip.medievalstuff.weightless_dagger_5.tooltip": "Press §6Alt§r to see the description",
+
+  "item.medievalstuff.weightless_dagger_tier_2": "Weightless Dagger",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_1.tooltip": "§3Tier 2§r",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_2.tooltip": "Has a higher chance to give your enemies a bit better levitation than §3tier 1§r",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_3.tooltip": "§6Right-click§r to make yourself levitate",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_4.tooltip": "§8The feeling is stronger. You start to feel a bit uncomfortable. The dagger wants something...§r",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_5.tooltip": "Press §6Ctrl§r to see the first ability description",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_6.tooltip": "Press §6Shift§r to see the second ability description",
+  "tooltip.medievalstuff.weightless_dagger_tier_2_7.tooltip": "Press §6Alt§r to see the description",
+
 
   "item.medievalstuff.silver_sword": "Silver Sword",
   "item.medievalstuff.silver_pickaxe": "Silver Pickaxe",
@@ -13,17 +37,32 @@
   "item.medievalstuff.silver_shovel": "Silver Shovel",
   "item.medievalstuff.silver_hoe": "Silver Hoe",
 
-  "item.medievalstuff.silver_dagger": "Silver Dagger",
-
-  "item.medievalstuff.weightless_dagger": "§bWeightless Dagger§r",
-  "item.medievalstuff.weightless_dagger_tier_2": "§bWeightless Dagger§r",
 
   "item.medievalstuff.silver_helmet": "Silver Helmet",
   "item.medievalstuff.silver_chestplate": "Silver Chestplate",
   "item.medievalstuff.silver_leggings": "Silver Leggings",
   "item.medievalstuff.silver_boots": "Silver Boots",
 
+
+  "item.medievalstuff.charged_life_giving_totem": "Life-Giving Totem",
+  "item.medievalstuff.discharged_life_giving_totem": "Life-Giving Totem",
+
+
+
+  "item.medievalstuff.spear_of_wind": "Spear of Wind",
+  "item.medievalstuff.enderium_blade": "Enderium Blade",
+  "item.medievalstuff.ritual_dagger": "Ritual Dagger",
+
+  "item.medievalstuff.magic_cane": "Magic Cane",
+
   "item.medievalstuff.jelly_spawn_egg": "Jelly Spawn Egg",
+
+
+
+  "itemgroup.medievalstuff_items": "Medieval Stuff: Items",
+  "itemgroup.medievalstuff_equipment": "Medieval Stuff: Equipment",
+
+
 
   "block.medievalstuff.lumishroom_cap": "Lumishroom Cap",
   "block.medievalstuff.lumishroom_log": "Lumishroom Log",
@@ -49,25 +88,14 @@
   "block.medievalstuff.silver_ore": "Silver Ore",
   "block.medievalstuff.deepslate_silver_ore": "Deepslate Silver Ore",
 
-  "itemgroup.medievalstuff": "Medieval Stuff",
 
-  "tooltip.medievalstuff.piece_of_jelly.tooltip": "When eaten might give §5levitation§r effect for around 1.5s",
-  "tooltip.medievalstuff.jar_of_jelly.tooltip": "When eaten might give §dlevitation§r effect for around 7.5s",
 
-  "tooltip.medievalstuff.weightless_dagger_1.tooltip": "§3Tier 1§r",
-  "tooltip.medievalstuff.weightless_dagger_2.tooltip": "Has a chance to give your enemies levitation for a bit",
-  "tooltip.medievalstuff.weightless_dagger_3.tooltip": "§8You feel something while keeping dagger in hands.§r",
-  "tooltip.medievalstuff.weightless_dagger_4.tooltip": "Press §6Ctrl§r to see the ability description",
-  "tooltip.medievalstuff.weightless_dagger_5.tooltip": "Press §6Alt§r to see the description",
+  "death.attack.weightlessDaggerTier2AbilityHit": "%1$s was not that smart enough to die by using one of Weightless Dagger's abilities",
+  "death.attack.weightlessDaggerTier2AbilityHit.player": "%1$s was stupid enough to die by using one of Weightless Dagger's abilities while trying to escape %2$s",
 
-  "tooltip.medievalstuff.weightless_dagger_tier_2_1.tooltip": "§3Tier 2§r",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_2.tooltip": "Has a higher chance to give your enemies a bit better levitation than §3tier 1§r",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_3.tooltip": "§6Right-click§r to make yourself levitate",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_4.tooltip": "§8The feeling is stronger. You start to feel a bit uncomfortable. The dagger wants something...§r",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_5.tooltip": "Press §6Ctrl§r to see the first ability description",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_6.tooltip": "Press §6Shift§r to see the second ability description",
-  "tooltip.medievalstuff.weightless_dagger_tier_2_7.tooltip": "Press §6Alt§r to see the description",
+  "death.attack.ritualDaggerAbilityHit": "%1$s died while using Ritual Dagger",
+  "death.attack.ritualDaggerAbilityHit.player": "%1$s died while using Ritual Dagger while trying to escape %2$s",
 
-  "death.attack.weightlessDaggerAbilityHit": "%1$s was silly enough to kill himself by using one of Weightless Dagger's abilities",
-  "death.attack.weightlessDaggerAbilityHit.player": "%1$s was silly enough to kill himself by using one of Weightless Dagger's abilities while trying to escape %2$s"
+  "item.medievalstuff.wind_staff": "Staff of Wind",
+  "item.medievalstuff.storm_staff": "Staff of Storm"
 }

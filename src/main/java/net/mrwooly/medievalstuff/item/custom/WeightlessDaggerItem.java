@@ -1,15 +1,20 @@
 package net.mrwooly.medievalstuff.item.custom;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.text.Text;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.random.Random;
 
-public class WeightlessDaggerItem extends DaggerItem {
+import java.util.List;
+
+public class WeightlessDaggerItem extends CustomSweepWeaponItem {
     private final RegistryEntry<StatusEffect> effect;
 
     public WeightlessDaggerItem(ToolMaterial toolMaterial, Settings settings, RegistryEntry<StatusEffect> effect) {
@@ -56,5 +61,21 @@ public class WeightlessDaggerItem extends DaggerItem {
             x = 0;
         }
         return super.postHit(stack, target, attacker);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_1.tooltip"));
+        if(Screen.hasControlDown()) {
+            tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_2.tooltip"));
+        } else {
+            tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_4.tooltip"));
+        }
+        if(Screen.hasAltDown()) {
+            tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_3.tooltip"));
+        } else {
+            tooltip.add(Text.translatable("tooltip.medievalstuff.weightless_dagger_5.tooltip"));
+        }
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }

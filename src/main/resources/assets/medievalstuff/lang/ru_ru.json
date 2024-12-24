@@ -8,25 +8,27 @@
   "item.medievalstuff.jar_of_jelly": "Банка желе",
 
 
+
+  "item.medievalstuff.silver_dagger": "Серебряный кинжал",
+  "item.medievalstuff.weightless_dagger": "Невесомый кинжал",
+  "item.medievalstuff.weightless_dagger_tier_2": "Невесомый кинжал",
+
   "item.medievalstuff.silver_sword": "Серебряный меч",
   "item.medievalstuff.silver_pickaxe": "Серебряная кирка",
   "item.medievalstuff.silver_axe": "Серебряный топор",
   "item.medievalstuff.silver_shovel": "Серебряная лопата",
   "item.medievalstuff.silver_hoe": "Серебряная мотыга",
 
-  "item.medievalstuff.silver_dagger": "Серебряный кинжал",
-
-  "item.medievalstuff.weightless_dagger": "Невесомый кинжал",
-  "item.medievalstuff.weightless_dagger_tier_2": "Невесомый кинжал",
-
   "item.medievalstuff.silver_helmet": "Серебряный шлем",
   "item.medievalstuff.silver_chestplate": "Серебряный нагрудник",
   "item.medievalstuff.silver_leggings": "Серебряные поножи",
   "item.medievalstuff.silver_boots": "Серебряные ботинки",
 
+  "item.medievalstuff.spear_of_wind": "Копьё ветра",
+  "item.medievalstuff.enderium_blade": "Эндериевый клинок",
+  "item.medievalstuff.ritual_dagger": "Ритуальный кинжал",
 
   "item.medievalstuff.jelly_spawn_egg": "Яйцо призыва желейки",
-
 
   "block.medievalstuff.lumishroom_cap": "Люмигибная шляпка",
   "block.medievalstuff.lumishroom_log": "Люмигрибное бревно",
@@ -35,7 +37,6 @@
   "block.medievalstuff.stripped_lumishroom_wood": "Обтёсанная люмигрибная древесина",
   "block.medievalstuff.lumishroom_planks": "Люмигрибные доски",
   "block.medievalstuff.lumishroom": "Люмигриб",
-
 
   "block.medievalstuff.gloomy_stone": "Мрачный камень",
   "block.medievalstuff.gloomy_stone_stairs": "Ступеньки из мрачного камня",
@@ -53,9 +54,7 @@
   "block.medievalstuff.silver_ore": "Серебряная руда",
   "block.medievalstuff.deepslate_silver_ore": "Глубинносланцевая серебряная руда",
 
-
   "itemgroup.medievalstuff": "Medieval Stuff",
-
 
   "tooltip.medievalstuff.piece_of_jelly.tooltip": "При поедании может дать §5левитацию§r на около 1.5с",
   "tooltip.medievalstuff.jar_of_jelly.tooltip": "При поедании может дать §5левитацию§r на около 7.5с",
@@ -74,6 +73,13 @@
   "tooltip.medievalstuff.weightless_dagger_tier_2_6.tooltip": "Нажмите §6Shift§r, чтобы увидеть описание второй способности",
   "tooltip.medievalstuff.weightless_dagger_tier_2_7.tooltip": "Нижмите §6Alt§r, чтобы увидеть описание",
 
-  "death.attack.weightlessDaggerAbilityHit": "%1$s был(а) настолько глуп, что убил себя, используя одну из способностей Невесомого Кинжала",
-  "death.attack.weightlessDaggerAbilityHit.player": "%1$s был(а) настолько глуп, что убил себя, используя одну из способностей Невесомого Кинжала, пытаясь сбежать от %2$s"
+  "death.attack.weightlessDaggerTier2AbilityHit": "%1$s был(а) настолько глуп, что убил себя, используя одну из способностей Невесомого Кинжала",
+  "death.attack.weightlessDaggerTier2AbilityHit.player": "%1$s был(а) настолько глуп, что убил себя, используя одну из способностей Невесомого Кинжала, пытаясь сбежать от %2$s",
+
+  "death.attack.ritualDaggerAbilityHit": "%1$s убил(а) себя при использовании Ритуального кинжала",
+  "death.attack.ritualDaggerAbilityHit.player": "%1$s убил(а) себя при использовании Ритуального кинжала, пытаясь сбежать от %2$s",
+
+  "item.medievalstuff.wind_staff": "Посох ветра",
+  "item.medievalstuff.storm_staff": "Посох бури"
+
 }

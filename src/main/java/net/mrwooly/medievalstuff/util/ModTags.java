@@ -12,13 +12,21 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_SILVER_TOOL = createTag("needs_silver_tool");
         public static final TagKey<Block> INCORRECT_FOR_SILVER_TOOL = createTag("incorrect_for_silver_tool");
 
+        public static final TagKey<Block> NEEDS_RITUAL_DAGGER_TOOL = createTag("needs_ritual_dagger_tool");
+        public static final TagKey<Block> INCORRECT_FOR_RITUAL_DAGGER_TOOL = createTag("incorrect_for_ritual_dagger_tool");
+
+        public static final TagKey<Block> NEEDS_WIND_TOOL = createTag("needs_wind_tool");
+        public static final TagKey<Block> INCORRECT_FOR_WIND_TOOL = createTag("incorrect_for_wind_tool");
+
+        public static final TagKey<Block> NEEDS_ENDERIUM_TOOL = createTag("needs_enderium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENDERIUM_TOOL = createTag("incorrect_for_enderium_tool");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(MedievalStuff.MOD_ID, name));
         }
     }
 
     public static class Items {
-        public static final TagKey<Item> MAGIC_GEMS = createTag("magic_gems");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(MedievalStuff.MOD_ID, name));

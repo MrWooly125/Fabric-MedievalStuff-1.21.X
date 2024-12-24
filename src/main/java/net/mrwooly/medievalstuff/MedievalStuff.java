@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.mrwooly.medievalstuff.block.ModBlocks;
+import net.mrwooly.medievalstuff.effect.ModEffects;
 import net.mrwooly.medievalstuff.entity.ModEntities;
 import net.mrwooly.medievalstuff.entity.custom.JellyEntity;
 import net.mrwooly.medievalstuff.item.ModItemGroups;
@@ -21,17 +22,25 @@ public class MedievalStuff implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+
+
 		ModItemGroups.registerItemGroups();
 
-		ModItems.registerModItems();
+
 		ModBlocks.registerModBlocks();
-
-		ModEntities.registerModEntities();
-
-		ModWorldGeneration.generateModWorldGeneration();
 
 		registerStrippables();
 		registerFlammables();
+
+
+		ModEffects.registerEffects();
+
+
+		ModWorldGeneration.generateModWorldGeneration();
+
+
+		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.JELLY, JellyEntity.createJellyAttributes());
 

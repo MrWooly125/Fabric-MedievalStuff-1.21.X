@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_enderium_tool"
+  ],
+  "remove": [
+    "#Medievalstuff:needs_enderium_tool"
+  ]
+}

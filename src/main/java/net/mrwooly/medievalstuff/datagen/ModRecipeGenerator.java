@@ -68,8 +68,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" N ")
                 .pattern(" I ")
                 .pattern(" S ")
-                .input('I', ModItems.SILVER_INGOT)
-                .input('N', ModItems.SILVER_NUGGET)
+                .input('N', ModItems.SILVER_INGOT)
+                .input('I', ModItems.SILVER_NUGGET)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.SILVER_INGOT), conditionsFromItem(ModItems.SILVER_INGOT))
                 .offerTo(exporter);

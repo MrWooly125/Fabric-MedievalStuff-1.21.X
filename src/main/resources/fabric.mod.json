@@ -3,13 +3,18 @@
 	"id": "medievalstuff",
 	"version": "${version}",
 	"name": "Medieval Stuff",
-	"description": "This is a small medieval and fantasy style mod! Enjoy it and have fun!:) And also huge thanks to 202abob5 for a few textures and ideas!",
+	"description": "This is a small fantasy (and a bit medieval in some places) style mod! Enjoy it and have fun!:)",
 	"authors": [
 		"MrWooly357!"
 	],
+	"Huge thanks to:": [
+		"Kaupenjoe for helping with code",
+		"D2012Abob5 for some textures and ideas",
+		"And a few of my other friends for lots of ideas"
+	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/medieval-stuff",
+		"sources": "https://github.com/MrWooly125/Fabric-MedievalStuff-1.21.X"
 	},
 	"license": "MIT",
 	"icon": "assets/medievalstuff/icon.png",

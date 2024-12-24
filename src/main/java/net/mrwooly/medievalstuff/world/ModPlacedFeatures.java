@@ -27,7 +27,7 @@ public class ModPlacedFeatures {
 
         register(context, LUMISHROOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LUMISHROOM),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(1, 0.001f, 1), ModBlocks.LUMISHROOM
+                        PlacedFeatures.createCountExtraModifier(1, 0.01f, 1), ModBlocks.LUMISHROOM
                 ));
 
 
